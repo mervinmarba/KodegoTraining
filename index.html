@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 3px solid lightgray;
+            display: block;
+        }
+        .box1 {
+            background-color: Green;
+            display: inline-block;
+        }
+        .box2 {
+            background-color: whitesmoke;
+            display: inline-block;
+        }
+        .box3 {
+            background-color: Red;
+        }
+
+        .box4 {
+            background-color: bisque;
+            display: none;
+        }
+        .box5 {
+            background-color: yellowgreen;
+            display: inline;
+            
+            
+        }
+        .b0x6 {
+            background-color: rgb(13, 59, 59);
+            /* short hand property */
+            /* 
+                the same as here, ASSIGNING IN ALL 4 SIDES
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            */
+            /* clockwise reading top right bottom left */
+            padding: 10px 5px 15px 20px;
+            /* border short hand property */
+            border: 1 solid burlywood;
+            border-width: 1px 2px 3px 4px;
+            border-style: solid dashed double groove;
+
+            border-top: 1px solid black;
+            border-bottom: 2px dashed green;
+            border-left: 3 double whitesmoke;
+            border-right: 4 groove red;
+
+            /* margin shorthand property */
+            margin: 20px;
+        }
+        .navigation {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .navigation li { 
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .navigation li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            
+
+        }
+        /* pseudo-class */
+
+        .navigation li a:hover{
+            text-decoration: underline;
+            color: blue;
+            font-size: 23px;
+        }
+
+        .navigation li a:visited{
+            color: darkred;
+        }
+
+        .box7{
+            border: 1px solid blue;
+            padding: 20px;
+        }
+        .box7:hover p {
+            color:red;
+        }
+
+        .parent li:first-child {
+            color: green;
+            font-size: 24px;
+
+        }
+        .parent li:nth-child(3) {
+            color: royalblue;
+            font-size: 30px;
+        }
+        .parent li:last-child{
+            color:aquamarine;
+            font-size: 35px;
+        }
+        .parent li:nth-child(even) {
+            color: rgb(225, 65, 118);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1> CSS Display Properties </h1>
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5">Lorem ipsum dolor sit amet.</div>
+    <div class="box6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatibus.   
+    </div>
+    <div class="box7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <br/><br/>
+
+    <ul class="navigation">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Info</a>
+        </li>
+    </ul>
+
+
+    <ul class="parent">
+        <li>Child1</li>
+        <li>Child2</li>
+        <li>Child3</li>
+        <li>Child4</li>
+        <li>Child5</li>
+    </ul>
+
+</body>
+</html>
